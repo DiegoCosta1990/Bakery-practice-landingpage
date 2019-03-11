@@ -1,0 +1,80 @@
+html{ 
+    min-height: 100vh;
+    overflow: hidden;
+}
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.altura{
+    height: 100vh;
+}
+span{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 23%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: mediumaquamarine;
+    text-shadow: black 3px 3px;
+}
+.boton{
+    background-color: black;
+    color: white;
+}
+.boton:hover{
+    animation-name: example;
+    animation-duration: 7s;
+}
+@keyframes example {
+    from {background-color: rgb(0, 0, 0);}
+    to {background-color: hsl(69, 100%, 50%);}
+    from {color: rgb(255, 255, 255);}
+    to {color: hsl(0, 0%, 0%);}
+    
+}
+
+
+@media only screen and (min-width: 320px){
+    span{
+        top:10%;
+    }
+    .boton{
+        font-size: 2rem;
+        padding: 12px 30px;
+}
+@media only screen and (min-width: 768px){
+    span{
+        font-size: 5em;
+        top: 18%;
+    }
+    .boton{
+        font-size: 2rem;
+        padding: 12px 30px;
+    }
+}    
+@media only screen and (min-width: 1026px){
+    span{
+        font-size: 5em;
+        top: 18%;
+    }
+    .boton{
+        font-size: 3rem;
+        padding: 12px 30px;
+    }
+}
+@media only screen and (min-width: 1442px){
+    span{
+        font-size: 10em;
+        top: 18%;
+        text-shadow: black 8px 8px;
+    }
+    .boton{
+        font-size: 6rem;
+        padding: 17px 53px;
+    }
+}
